@@ -1,0 +1,1 @@
+import "lit/polyfill-support";

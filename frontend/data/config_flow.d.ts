@@ -1,0 +1,17 @@
+import { Connection } from "home-assistant-js-websocket";
+import { LocalizeFunc } from "../common/translations/localize";
+import { HomeAssistant } from "../types";
+import { DataEntryFlowProgress, DataEntryFlowStep } from "./data_entry_flow";
+import { IntegrationType } from "./integration";
+export declare const DISCOVERY_SOURCES: string[];
+export declare const ATTENTION_SOURCES: string[];
+export declare const createConfigFlow: (hass: HomeAssistant, handler: string, entry_id?: string) => Promise<DataEntryFlowStep>;
+export declare const fetchConfigFlow: (hass: HomeAssistant, flowId: string) => Promise<DataEntryFlowStep>;
+export declare const handleConfigFlowStep: (hass: HomeAssistant, flowId: string, data: Record<string, any>) => Promise<DataEntryFlowStep>;
+export declare const ignoreConfigFlow: (hass: HomeAssistant, flowId: string, title: string) => Promise<unknown>;
+export declare const deleteConfigFlow: (hass: HomeAssistant, flowId: string) => Promise<unknown>;
+export declare const getConfigFlowHandlers: (hass: HomeAssistant, type?: IntegrationType[]) => Promise<string[]>;
+export declare const fetchConfigFlowInProgress: (conn: Connection) => Promise<DataEntryFlowProgress[]>;
+export declare const getConfigFlowInProgressCollection: (conn: Connection) => import("home-assistant-js-websocket").Collection<DataEntryFlowProgress[]>;
+export declare const subscribeConfigFlowInProgress: (hass: HomeAssistant, onChange: (flows: DataEntryFlowProgress[]) => void) => import("home-assistant-js-websocket").UnsubscribeFunc;
+export declare const localizeConfigFlowTitle: (localize: LocalizeFunc, flow: DataEntryFlowProgress) => string;

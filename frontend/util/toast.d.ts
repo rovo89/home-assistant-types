@@ -1,0 +1,2 @@
+import { ShowToastParams } from "../managers/notification-manager";
+export declare const showToast: (el: HTMLElement, params: ShowToastParams) => Event;
