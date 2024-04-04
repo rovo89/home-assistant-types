@@ -15,6 +15,7 @@ declare class SearchInputOutlined extends LitElement {
     protected render(): TemplateResult;
     private _filterChanged;
     private _filterInputChanged;
+    private _clearSearch;
     static get styles(): CSSResultGroup;
 }
 declare global {

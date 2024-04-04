@@ -18,6 +18,7 @@ declare class DialogLabelDetail extends LitElement implements HassDialog<LabelDe
     private _params?;
     private _submitting;
     showDialog(params: LabelDetailDialogParams): void;
+    private _handleKeyPress;
     closeDialog(): void;
     protected render(): typeof nothing | import("lit-html").TemplateResult<1>;
     private _input;

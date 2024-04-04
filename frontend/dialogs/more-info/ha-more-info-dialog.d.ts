@@ -39,6 +39,7 @@ export declare class MoreInfoDialog extends LitElement {
     large: boolean;
     private _entityId?;
     private _currView;
+    private _initialView;
     private _childView?;
     private _entry?;
     private _infoEditMode;
@@ -51,6 +52,7 @@ export declare class MoreInfoDialog extends LitElement {
     private _getDeviceId;
     private setView;
     private _goBack;
+    private _resetInitialView;
     private _goToHistory;
     private _goToSettings;
     private _showChildView;

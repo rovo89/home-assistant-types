@@ -1,6 +1,8 @@
 import "@material/mwc-button";
 import "@material/mwc-list/mwc-list";
 import { CSSResultGroup, LitElement, nothing } from "lit";
+import "../../../components/chips/ha-chip-set";
+import "../../../components/chips/ha-input-chip";
 import "../../../components/ha-alert";
 import "../../../components/ha-aliases-editor";
 import "../../../components/ha-icon-picker";
@@ -19,9 +21,15 @@ declare class DialogFloorDetail extends LitElement {
     private _error?;
     private _params?;
     private _submitting?;
-    showDialog(params: FloorRegistryDetailDialogParams): Promise<void>;
+    private _addedAreas;
+    private _removedAreas;
+    showDialog(params: FloorRegistryDetailDialogParams): void;
     closeDialog(): void;
+    private _floorAreas;
     protected render(): typeof nothing | import("lit-html").TemplateResult<1>;
+    private _openArea;
+    private _removeArea;
+    private _addArea;
     private _isNameValid;
     private _nameChanged;
     private _levelChanged;

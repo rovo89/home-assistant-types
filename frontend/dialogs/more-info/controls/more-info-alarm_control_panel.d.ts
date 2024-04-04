@@ -1,5 +1,5 @@
 import { CSSResultGroup, LitElement, nothing } from "lit";
-import "../../../components/ha-outlined-button";
+import "../../../components/ha-control-button";
 import "../../../components/ha-state-icon";
 import { AlarmControlPanelEntity } from "../../../data/alarm_control_panel";
 import "../../../state-control/alarm_control_panel/ha-state-control-alarm_control_panel-modes";

@@ -88,6 +88,7 @@ export declare class HaDataTable extends LitElement {
     private _savedScrollPos?;
     private _debounceSearch;
     clearSelection(): void;
+    selectAll(): void;
     connectedCallback(): void;
     protected firstUpdated(): void;
     willUpdate(properties: PropertyValues): void;

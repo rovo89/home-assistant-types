@@ -12,5 +12,5 @@ export interface RelatedResult {
     script_blueprint?: string[];
 }
 export declare const SearchableDomains: Set<string>;
-export type ItemType = "area" | "automation" | "config_entry" | "device" | "entity" | "floor" | "group" | "scene" | "script" | "automation_blueprint" | "script_blueprint";
+export type ItemType = "area" | "automation" | "config_entry" | "device" | "entity" | "floor" | "group" | "label" | "scene" | "script" | "automation_blueprint" | "script_blueprint";
 export declare const findRelated: (hass: HomeAssistant, itemType: ItemType, itemId: string) => Promise<RelatedResult>;

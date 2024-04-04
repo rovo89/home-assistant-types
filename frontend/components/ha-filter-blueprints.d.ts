@@ -15,6 +15,7 @@ export declare class HaFilterBlueprints extends LitElement {
     private _expandedWillChange;
     private _expandedChanged;
     private _blueprintsSelected;
+    private _clearFilter;
     static get styles(): CSSResultGroup;
 }
 declare global {

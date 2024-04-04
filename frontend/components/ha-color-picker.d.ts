@@ -1,6 +1,7 @@
 import "@material/mwc-list/mwc-list-item";
 import { LitElement } from "lit";
 import "./ha-select";
+import "./ha-list-item";
 import { HomeAssistant } from "../types";
 export declare class HaColorPicker extends LitElement {
     label?: string;

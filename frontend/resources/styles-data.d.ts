@@ -125,6 +125,8 @@ export declare const derivedStyles: {
     readonly "mdc-select-disabled-ink-color": "var(--input-disabled-ink-color)";
     readonly "mdc-select-dropdown-icon-color": "var(--input-dropdown-icon-color)";
     readonly "mdc-select-disabled-dropdown-icon-color": "var(--input-disabled-ink-color)";
+    readonly "ha-assist-chip-filled-container-color": "rgba(var(--rgb-primary-text-color),0.15)";
+    readonly "ha-assist-chip-active-container-color": "rgba(var(--rgb-primary-color),0.15)";
     readonly "chip-background-color": "rgba(var(--rgb-primary-text-color), 0.15)";
     readonly "material-body-text-color": "var(--primary-text-color)";
     readonly "material-background-color": "var(--card-background-color)";

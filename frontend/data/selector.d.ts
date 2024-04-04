@@ -4,7 +4,7 @@ import { HomeAssistant, ItemPath } from "../types";
 import { DeviceRegistryEntry } from "./device_registry";
 import { EntityRegistryDisplayEntry, EntityRegistryEntry } from "./entity_registry";
 import { EntitySources } from "./entity_sources";
-export type Selector = ActionSelector | AddonSelector | AreaSelector | AreaFilterSelector | AttributeSelector | BooleanSelector | ColorRGBSelector | ColorTempSelector | ConditionSelector | ConversationAgentSelector | ConfigEntrySelector | ConstantSelector | CountrySelector | DateSelector | DateTimeSelector | DeviceSelector | LegacyDeviceSelector | DurationSelector | EntitySelector | LegacyEntitySelector | FileSelector | IconSelector | LabelSelector | LanguageSelector | LocationSelector | MediaSelector | NavigationSelector | NumberSelector | ObjectSelector | AssistPipelineSelector | QRCodeSelector | SelectSelector | SelectorSelector | StateSelector | StatisticSelector | StringSelector | STTSelector | TargetSelector | TemplateSelector | ThemeSelector | TimeSelector | TriggerSelector | TTSSelector | TTSVoiceSelector | UiActionSelector | UiColorSelector;
+export type Selector = ActionSelector | AddonSelector | AreaSelector | AreaFilterSelector | AttributeSelector | BooleanSelector | ColorRGBSelector | ColorTempSelector | ConditionSelector | ConversationAgentSelector | ConfigEntrySelector | ConstantSelector | CountrySelector | DateSelector | DateTimeSelector | DeviceSelector | FloorSelector | LegacyDeviceSelector | DurationSelector | EntitySelector | LegacyEntitySelector | FileSelector | IconSelector | LabelSelector | LanguageSelector | LocationSelector | MediaSelector | NavigationSelector | NumberSelector | ObjectSelector | AssistPipelineSelector | QRCodeSelector | SelectSelector | SelectorSelector | StateSelector | StatisticSelector | StringSelector | STTSelector | TargetSelector | TemplateSelector | ThemeSelector | TimeSelector | TriggerSelector | TTSSelector | TTSVoiceSelector | UiActionSelector | UiColorSelector;
 export interface ActionSelector {
     action: {
         path?: ItemPath;
@@ -90,6 +90,13 @@ export interface DeviceSelector {
     device: {
         filter?: DeviceSelectorFilter | readonly DeviceSelectorFilter[];
         entity?: EntitySelectorFilter | readonly EntitySelectorFilter[];
+        multiple?: boolean;
+    } | null;
+}
+export interface FloorSelector {
+    floor: {
+        entity?: EntitySelectorFilter | readonly EntitySelectorFilter[];
+        device?: DeviceSelectorFilter | readonly DeviceSelectorFilter[];
         multiple?: boolean;
     } | null;
 }

@@ -23,6 +23,9 @@ export declare class HaConfigLabels extends LitElement {
     private _createLabel;
     private _updateLabel;
     private _removeLabel;
+    private _navigateEntities;
+    private _navigateDevices;
+    private _navigateAutomations;
 }
 declare global {
     interface HTMLElementTagNameMap {

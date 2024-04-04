@@ -1,7 +1,7 @@
 import { CSSResultGroup, LitElement, nothing } from "lit";
 import type { HomeAssistant } from "../types";
-import "./ha-expansion-panel";
 import "./ha-check-list-item";
+import "./ha-expansion-panel";
 import "./ha-icon";
 export declare class HaFilterStates extends LitElement {
     hass: HomeAssistant;
@@ -20,6 +20,7 @@ export declare class HaFilterStates extends LitElement {
     private _expandedWillChange;
     private _expandedChanged;
     private _statesSelected;
+    private _clearFilter;
     static get styles(): CSSResultGroup;
 }
 declare global {

@@ -1,14 +1,15 @@
 import "@lrnwebcomponents/simple-tooltip/simple-tooltip";
 import "@material/mwc-button/mwc-button";
-import "@material/web/menu/menu";
-import "@material/web/menu/menu-item";
+import "@material/web/divider/divider";
 import { CSSResultGroup, LitElement, TemplateResult } from "lit";
 import { LocalizeFunc } from "../common/translations/localize";
 import "../components/chips/ha-assist-chip";
 import "../components/chips/ha-filter-chip";
 import "../components/data-table/ha-data-table";
 import type { DataTableColumnContainer, DataTableRowData } from "../components/data-table/ha-data-table";
+import "../components/ha-button-menu-new";
 import "../components/ha-dialog";
+import "../components/ha-menu-item";
 import "../components/search-input-outlined";
 import type { HomeAssistant, Route } from "../types";
 import "./hass-tabs-subpage";
@@ -133,6 +134,8 @@ export declare class HaTabsSubpageDataTable extends LitElement {
     private _handleGroupBy;
     private _enableSelectMode;
     private _disableSelectMode;
+    private _selectAll;
+    private _selectNone;
     private _handleSearchChange;
     static get styles(): CSSResultGroup;
 }

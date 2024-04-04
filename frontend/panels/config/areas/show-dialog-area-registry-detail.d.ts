@@ -1,6 +1,7 @@
 import { AreaRegistryEntry, AreaRegistryEntryMutableParams } from "../../../data/area_registry";
 export interface AreaRegistryDetailDialogParams {
     entry?: AreaRegistryEntry;
+    suggestedName?: string;
     createEntry?: (values: AreaRegistryEntryMutableParams) => Promise<unknown>;
     updateEntry?: (updates: Partial<AreaRegistryEntryMutableParams>) => Promise<unknown>;
 }
